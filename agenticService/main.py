@@ -1,7 +1,9 @@
 from fastapi import FastAPI
-from agents.agent_node import generate_ans
-app = FastAPI()
-@app.get("/")
+from agents.graph import app
+fastapi_app = FastAPI()
+
+@fastapi_app.get("/")
 def chek():
-    return {"response" : generate_ans()}
+    res= app.invoke({"user_url": "HELLO"})
+    return {"response" : res}
 

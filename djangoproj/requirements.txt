@@ -1,5 +1,0 @@
-django
-django-ninja
-uvicorn
-gunicorn
-whitenoise
