@@ -1,7 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional,List
 class State(BaseModel):
-    user_url:str
+    user_obj:Optional[str]=None
+    user_url:Optional[str]=None
     location: Optional[str]=None
     caption:Optional[str]=None
     news:Optional[List[str]]=None
