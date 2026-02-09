@@ -5,7 +5,7 @@ class State(BaseModel):
     user_url:Optional[str]=None
     location: Optional[str]=None
     caption:Optional[str]=None
-    news:Optional[List[str]]=None
+    news:Optional[Dict[str, Any]]=None
     weather:Optional[Dict[str, Any]]=None
     segregator:Optional[str]=None
     verdict:Optional[str]=None
