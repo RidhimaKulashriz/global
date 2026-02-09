@@ -12,5 +12,6 @@ class State(BaseModel):
     prob:Optional[float]=0
     analysis_steps:Optional[List[str]]=None
     merged_context:Optional[str]=None
+    image_bytes: Optional[bytes] = None
 
 
