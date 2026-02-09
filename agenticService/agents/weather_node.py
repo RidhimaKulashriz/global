@@ -1,6 +1,7 @@
 from .state import State
 import requests
 from dotenv import load_dotenv
+import os
 load_dotenv()
 def weather_node(state: State):
     BASE_URL = os.getenv("BASE_URL")
